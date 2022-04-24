@@ -1,0 +1,88 @@
+body{
+  height: 100vh;
+  margin : 0;
+  box-sizing: border-box;
+  padding: 0px;
+  font-family: 'Square Peg', cursive;
+  font-size: 2em;
+  font-weight: 600;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+header h1{
+margin: 50px 0 30px 0;
+ text-align: center;
+}
+header p{
+  font-size: 2.5rem;
+  font-wight: 500;
+}
+.pads{
+  background-color: rgb(0,200,220);
+  width: 100%;
+  display: flex;
+}
+.pads > div{
+  height: 100px;
+  width: 100px;
+  flex: 1;
+}
+.pad1{
+  background-color: rgb(180, 225, 64);
+}
+.pad2{
+  background-color: rgb(186, 45, 114);
+}
+.pad3{
+  background-color: rgb(53, 75, 155);
+}
+.pad4{
+  background-color: rgb(140, 131, 23);
+}
+.pad5{
+  background-color: rgb(195, 96, 30) ;
+}
+.pad6{
+  background-color: rgb(139, 29, 196);
+}
+.visual{
+/*   height: 400px;
+  width: 100%: */
+  height: 32vw;}
+
+.visual > div{
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  bottom: 0%;
+  left: 20%;
+  z-index: -1;
+}
+
+@keyframes jump{
+  0%{
+    bottom: 0%;
+    left: 20%;
+  }
+  50%{
+    bottom: 50%;
+    left: 50%;
+  }
+  100%{
+    bottom: 0%;
+    left: 80%;
+  }
+}
+
+.visual > div{
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  border-radius:50%;
+  bottom: 0%;
+}
